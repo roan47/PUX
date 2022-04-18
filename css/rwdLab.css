@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda&family=Fira+Mono:wght@400;500;700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+body {
+  font-family: "Fira Mono", monospace;
+  font-size: 18px;
+}
+
+.btn.btn-dark{
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: 8px 10px;
+    display: inline-block;
+    margin: .5em 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.btn.btn-dark:hover {
+    background-color: rgb(200,200,200);
+    color: rgb(50,50,50); 
+}
+/* #region Navigation */
+header {
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: 1em;
+}
+header a.brand {    
+    font-family: 'Coda', cursive;
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+header nav {
+    float: right;
+    padding: 10px;
+}
+header ul li {
+    display:inline-block;
+    padding: 0 1em;
+}
+
+a#navToggler {
+    display: none;
+    font-size: 2em;
+    position: absolute;
+    top: .25em;
+    right: .5em;
+}
+
+nav a, header a.brand {
+    color: rgb(200,200,200);
+    transition: .25s ease-in-out;
+    text-decoration: none;
+}
+
+nav a:hover, header a.brand:hover {
+    color: rgb(254,155,61);
+}
+nav a {
+    display:block;
+}
+/* #endregion */
+/* #region Banner */
+
+section.banner {
+    background-image: url(/images/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 95vh;
+}
+
+section.banner div {
+    padding: 10vh 20%;
+    height: 100%;
+    color: black;
+}
+
+section h2 {
+   text-transform: uppercase;
+    font-size: 3em;
+}
+
+section.banner p {
+    width: 85%;
+    font-size: 1.25em;
+}
+
+/* #endregion */
+
+/* #region About */
+section.about {
+    background-image: url(/images/landing1.jpg);
+}
+
+section.about article {
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 50%;
+    background-color: rgba(255,255,255, .75);
+    color: black;
+    padding: 7vh 3em;
+    height: 100%;
+}
+
+section.about h3 {
+    font-size: 5em;
+}
+section.about article ul li{
+    margin: 1em 0;
+}
+/* #endregion */
+/* #region Projects */
+section.projects {
+    background-color: rgb(50,50,50);
+    color: white;
+}
+
+section.projects h3 {
+    text-align: center;
+    padding: .25em 0;
+    font-size: 4em;
+}
+
+article.project-container {
+    padding: 2em;
+    margin: 1em 0 0;
+   text-align: center;
+}
+
+section.single-project {
+    width: 30%;
+    display: inline-block;
+    position:relative;
+    margin: 10px;
+}
+
+section.single-project img {
+    width: 100%;
+}
+
+section.single-project div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    background-color: white;
+    color: black;
+}
+/* #endregion */
+/* #region Testimonials */
+section.testimonial {
+    background-color: rgb(254,155,61);
+    color: black;
+    padding: 10vh 25% 15vh;
+}
+section.testimonial img {
+    width: 25%;
+    float: right;
+    margin-left: 1em;
+}
+section.testimonial p {
+    padding: 10px 2px 2px;
+    text-align: left;
+}
+/* #endregion */
+
+footer {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: rgb(50,50,50);
+    color: white;
+}
+
+/* #region Media Queries Lab Solution */
+
+    /* PLACE MEDIA QUERIES HERE */
+
+/* #endregion */

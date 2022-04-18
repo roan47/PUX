@@ -1,0 +1,338 @@
+/* #region General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Coda&family=Fira+Mono:wght@400;500;700&display=swap");
+
+/*  Fonts
+ font-family: 'Coda', cursive;
+font-family: 'Fira Mono', monospace;
+
+    Colors
+    light: rgb(232,229,220)
+    blue: rgb(6,26,63)
+    orangered: rgb(254,69,31)
+ */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Fira Mono", monospace;
+}
+
+main {
+  background-image: url(/images/landing3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  color: rgb(232, 229, 220);
+  text-decoration: none;
+  transition: .25s;
+}
+
+
+a:hover {
+  color: rgb(254, 69, 31);
+}
+
+.color {
+  color: rgb(0, 0, 0);
+  background-color: rgb(232, 229, 220);
+}
+
+.wrapper {
+  padding: 2em;
+}
+
+/* #endregion */
+
+/* #region Landing Page */
+section.landing {
+  min-height: 92vh;
+  padding-top: 15vh;
+  text-align: center;
+}
+section.landing h1 {
+  font-family: "Coda", cursive;
+  font-size: 2.5em;
+  background-color: rgb(50, 50, 50);
+  color: rgb(232, 229, 220);
+  margin: 0 auto;
+}
+section.landing ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  background-color: rgb(232, 229, 220, 0.75);
+}
+
+section.landing div.landingContainer {
+  width: 55%;
+  margin: auto;
+  box-shadow: 5px 5px 1px rgb(50, 50, 50);
+}
+section.landing ul li {
+  margin-left: 0;
+  width: 100%;
+}
+section.landing a {
+  display: block;
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid black;
+  transition: 0.25s ease;
+}
+
+section.landing a:hover {
+  background-color: rgb(232, 229, 220);
+  color: rgb(254, 69, 31);
+}
+/* #endregion */
+/* #region JSINTRO */
+/* Position is a property that allows us to customize where an element will go in the layout. By default, all elements are position: static. 
+    Static - default
+    Relative - a relative position from the static positioning
+        -Good for moving an item a very small distance on the screen
+    Absolute - detail the exact position an element will go on the screen
+        -Good for moving an item to an exact position in a layout
+        -Similar to a float in that it pulls the element from the layout and can result in content that is overlayed on top of other content.
+    Fixed - The element will remain at the location in your screen no matter where you scroll...good for navigations that you want to stay at the top of the screen
+
+With all of these property: value pairs, you will want to use the top, left, right, and bottom properties to detail the position you want it to take in the layout
+*/
+div.introContainer {
+  padding: 5em 15vw;
+  position: relative;
+  margin-top: 4.25em;
+}
+
+
+.introToJS {
+  background-color: rgb(232, 229, 220);
+  width: 60%;
+  padding: 5em;
+  box-shadow: 5px 5px 1px rgb(50, 50, 50);
+  position: relative;
+}
+
+
+.introToJS img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 75px;
+  height: 75px;
+}
+
+.about ul {
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+}
+
+div.introContainer.debug .introToJS{
+  width: 60%;
+  margin-left: 40%;
+}
+/* #endregion */
+/* #region RWD */
+
+/* #region Menu */
+header {
+  height: 4.25em;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 10000;
+}
+header h1 {
+  padding-top: .25em;
+}
+#menu {
+  background-color: rgba(232,229,220, .95);
+  padding: 0;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  text-align: center;
+  font-family: 'Coda', cursive;
+  overflow: hidden;
+  transition: .25s ease;
+  z-index: 100000;
+}
+
+#menu h2 {
+  font-style: italic;
+}
+
+#menu button#close {
+  position: absolute;
+  top: .75em;
+  right: .75em;
+  font-size: 1.5em;
+  background: none;
+  transition: .25s ease;
+}
+
+button#closeButton i#closeButton:hover{
+  color: rgb(254, 69, 31) !important;
+}
+
+#menu button:hover {
+  color: rgb(254,69,31);
+}
+
+#hamburger {
+  background: none;
+  color: rgb(232,229,220);
+  border-radius: 1px;
+  padding: 0 .25em;
+  font-size: 2.5em;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transition: .25s;
+}
+#hamburger:hover {
+  color: rgb(254,69,31);
+}
+
+ul.landing-menu {
+  margin-top: 2em;
+  font-family: 'Fira Mono', monospace;
+  padding: 0;
+}
+ul.landing-menu h1 {
+  width: 100%;
+}
+ul.landing-menu li {
+  list-style: none;
+}
+ul.landing-menu li a{
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: .25s ease;
+  font-weight: bold;
+}
+
+ul.landing-menu li a:hover {
+  color: rgb(254,69,31);
+  letter-spacing: 1px;
+}
+
+
+button.toggleText {
+  display: none;
+}
+
+ul.landing-menu  a.active {
+  color: rgb(254, 69, 31);
+  letter-spacing: 1px;
+}
+
+
+
+
+/* JQUERY - STEP 10 */
+h4.beefup__head button{
+  color: rgb(232,229,220);
+}
+
+.beefup__body {
+  border-top: 1px solid rgb(232, 229, 220);
+}
+
+a.color {
+  color: rgb(254, 69, 31);
+  transition: .25s;
+}
+
+a.color:hover {
+  color: rgb(50, 50, 50);
+}
+section.jquery {
+  background-color: rgba(50,50,50,.35);
+}
+
+button[type=button] {
+  color: white;
+}
+/* JQUERY END STEP 10 go to custom lightbox HTML in jquery.html */
+/* JQUERY - STEP 14  Custom lightbox */
+.thumb {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#lightbox-container {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0,0,0, .8);
+ z-index: 200000;
+ text-align: center;
+ padding: 3em;
+ display: none;/*Display none after you style the element the way you want. We will use jQuery to open this lightbox*/
+}
+
+#lightbox-container p {
+ color: #fff;
+}
+#lightbox-content img {
+  border-radius: 10px;
+}
+/*  JQUERY END STEP 9*/
+
+
+/*#endregion*/
+
+@media screen and (max-width: 997px){
+
+    section.landing div.landingContainer {
+        width: 100%;
+    }
+
+    .introToJS {
+      width: 100%;
+      padding: 2em;
+    }
+
+    .introToJS h2 {
+      font-size: 2em;
+    }
+
+    article.addedClass {
+      width: 100% !important;
+      padding: 2em;
+    }
+
+    .singleItem {
+      margin: 10px;
+    }
+    div.introContainer.debug .introToJS {
+      width:100%;
+      margin-left: 0;
+    }
+
+    .about ul {
+      width: 100%;
+    }
+
+}
+
+

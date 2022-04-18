@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Design Lab</title>
+    <meta name="description" content="This is a lab assignment for TekLadder students"/>
+    <link href="/css/rwdLab.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="brand">Responsive Design Lab</a>
+        <nav>
+            <ul class="topNav">
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div>
+                <h2>Responsive Web Design</h2>
+                <p>In this page, we have a basic wireframe with some basic styling. <strong>YOUR TASK</strong> is to follow
+                    the Responsive Web Design lab wireframes and create the design for each of the following screen sizes
+                    (1023px & 767px) using media queries.</p>
+                <a class="btn btn-dark" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank" rel="noreferrer">CSS Media
+                    Queries docs</a>
+            </div>
+        </section>
+        <section class="about">
+            <article>
+                <h3>About</h3>
+                <ul>
+                    <li><strong>Viewport metatag</strong><br/>This keeps the website from zooming out on small screens.</li>
+                    <li><strong>Widths as %</strong><br/>This allows images to respond in size to the overall screen size.</li>
+                    <li><strong>Font size as em</strong><br/>Set a px measurement on the body selector's font-size. All other font-sizes should be em to allow for ease in making adjustments to font sizes.</li>
+                    <li><strong>CSS Media Queries</strong><br/>CSS instructions that wait for certain viewport widths and execute styles at those screen sizes.</li>
+                    <li><strong>JS Tweaks to UI</strong><br/>There are times where you need some JavaScript to manage changes to the UI. (i.e. Hamburger Menu buttons, hiding certain elements, etc.)</li>
+                </ul>
+            </article>
+        </section>
+        <section class="projects">
+            <h3>Projects</h3>
+            <article class="project-container">
+                <section class="single-project">
+                    <img src="/images/shoe1.jpg" />
+                    <div>
+                        <h4>Project 1</h4>
+                        <p>This is a really cool project description.</p>
+                    </div>
+                </section>
+                <section class="single-project">
+                    <img src="/images/shoe2.jpg" />
+                    <div>
+                        <h4>Project 2</h4>
+                        <p>This is a really cool project description.</p>
+                    </div>
+                </section>
+                <section class="single-project">
+                    <img src="/images/shoe3.jpg" />
+                    <div>
+                        <h4>Project 3</h4>
+                        <p>This is a really cool project description.</p>
+                    </div>
+                </section>
+                <section class="single-project">
+                    <img src="/images/shoe1.jpg" />
+                    <div>
+                        <h4>Project 1</h4>
+                        <p>This is a really cool project description.</p>
+                    </div>
+                </section>
+                <section class="single-project">
+                    <img src="/images/shoe2.jpg" />
+                    <div>
+                        <h4>Project 2</h4>
+                        <p>This is a really cool project description.</p>
+                    </div>
+                </section>
+                <section class="single-project">
+                    <img src="/images/shoe3.jpg" />
+                    <div>
+                        <h4>Project 3</h4>
+                        <p>This is a really cool project description.</p>
+                    </div>
+                </section>
+                </div>
+        </section>
+        <section class="testimonial">
+            <img src="/images/chuck.jpg" alt="Chuck Norris could make this picture load!"/>
+            <p>This is a really great testimonial written from a very credible source I am sure.</p>
+            <p><em>Chuck Norris</em></p>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+    <script src="/js/vendor/jquery-3.6.0.min.js"></script>
+</body>
+</html>

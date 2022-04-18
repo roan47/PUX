@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Principles of User Experience | Responsive Web Design</title>
+    <meta name="description" content="Welcome to an info site about JavaScript and front-end development practices." />
+    <meta name="Author" content="Centriq Training" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- Bootstrap Styling -->
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+
+    <!-- Bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Bootstrap Theme Styling -->
+    <link rel="stylesheet" href="/css/vendor/journal.min.css" />
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="/css/custom.css" />
+</head>
+
+<body>
+    <header class="bg-dark text-white p-2">        
+        <a href="/" class="navbar-brand">
+            <h1>JavaScript<span id="spanToStyle">Intro</span></h1>
+        </a>       
+    </header>    
+    <main id="bg">
+        <section class="responsive">
+            <div class="introContainer">                
+                <article class="introToJS text-dark">
+                    <h2>Responsive Web Design</h2>
+                </article>
+            </div>
+            <article class="bg-dark text-white p-5">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 p-4">
+                        <p>In front-end development, HTML provides the structure while CSS styles/formats the content and JavaScript provides changes to styling and content based off of user interaction.</p>
+                        <hr/>
+                        <h2 class="fs-4">Basic Responsive Design Needs</h2>    
+                        <ul>
+                                <li><strong>Viewport metatag</strong><br/>This keeps the website from zooming out on small screens.</li>
+                                <li><strong>Widths as %</strong><br/>This allows images to respond in size to the overall screen size.</li>
+                                <li><strong>Font size as em</strong><br/>Set a px measurement on the body selector's font-size. All other font-sizes should be em to allow for ease in making adjustments to font sizes.</li>
+                                <li><strong>CSS Media Queries</strong><br/>CSS instructions that wait for certain viewport widths and execute styles at those screen sizes.</li>
+                                <li><strong>JS Tweaks to UI</strong><br/>There are times where you need some JavaScript to manage changes to the UI. (i.e. Hamburger Menu buttons, hiding certain elements, etc.)</li>
+                            </ul>
+                    </div>
+                    <img src="/images/response.jpg" class="col-md-6" />
+                </div>
+            </article>
+            <h2 class="bg-info text-dark text-center p-3">Code Examples</h2>        
+        </section>
+    </main>
+    <footer class="text-white bg-dark p-4">
+        <p class="text-center" id="copyright"></p>
+    </footer>
+
+
+    <script src="/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

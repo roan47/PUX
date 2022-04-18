@@ -1,0 +1,1 @@
+//When I creat a JS file, test it's working with alert()
